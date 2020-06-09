@@ -13,10 +13,22 @@ public class LoginServlet extends GenericServlet{
 	@Override
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		HttpServletRequest request = (HttpServletRequest)req;
+		String method = request.getMethod();
 		
 		System.out.println("Login Servelt Called");
+		String resp = "";
+		
+		if(method.equals("POST")) {
+			resp = "<button>Click Here This Was "
+					+ "POST Request</button>";
+		}
+		else if(method.equals("GET")) {
+			resp = "<button >This was Get Request </button>";
+		}
+		
 		PrintWriter writer =  res.getWriter();
-		writer.write("<button>Click Here</button>");
+		writer.write(resp);
 		writer.flush();
 		writer.close();
 		
