@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.GenericServlet;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -15,9 +16,8 @@ public class LoginServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String rs = "<button>Click Here This Was "
-				+ "GET Request HTTP</button>";
-		resp.getWriter().write(rs);
+		RequestDispatcher dispatcher = req.getRequestDispatcher("login.html");
+		dispatcher.forward(req,resp );
 	}
 	
 	
@@ -25,7 +25,7 @@ public class LoginServlet extends HttpServlet{
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String rs = "<button>Click Here This Was "
-				+ "POST Request HTTP</button>";
+				   + "POST Request HTTP</button>";
 		resp.getWriter().write(rs);
 	}
 	

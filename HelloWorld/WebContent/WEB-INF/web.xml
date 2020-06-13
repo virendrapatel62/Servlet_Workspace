@@ -20,5 +20,15 @@
 	</servlet-mapping>
 	
 	
+	<servlet>
+		<servlet-name>todayDate</servlet-name>
+		<servlet-class>DateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>todayDate</servlet-name>
+		<url-pattern>/today</url-pattern>
+	</servlet-mapping>
+	
+	
  		
 </web-app>
