@@ -10,6 +10,8 @@
 <h1>Index.jsp</h1>
 
 <a href='today'>Today's Date</a>
+<br><br>
+<a href='fake-credit-cards'>Generate Fake Credit Cards</a>
 
 
 </body>

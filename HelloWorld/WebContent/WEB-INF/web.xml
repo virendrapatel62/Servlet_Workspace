@@ -30,5 +30,15 @@
 	</servlet-mapping>
 	
 	
+	<servlet>
+		<servlet-name>fakedata</servlet-name>
+		<servlet-class>FakeDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fakedata</servlet-name>
+		<url-pattern>/fake-credit-cards</url-pattern>
+	</servlet-mapping>
+	
+	
  		
 </web-app>
