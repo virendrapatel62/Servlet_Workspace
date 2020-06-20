@@ -10,7 +10,36 @@
 <h1>Index.jsp</h1>
 
 <a href='today'>Today's Date</a>
-<br><br>
+<br>
+<h1>
+
+	<%@ page import="java.util.Date" %>
+
+		
+	<%!
+	
+	
+		final int number = 90;
+	
+		public int sayHello(int number){
+			return number * 3;
+		}
+	%>
+	<%= new Date() %>
+	<% 
+		int[] arr = new int[]{12,23,56,89,65,89};
+		
+		for(int i : arr){
+		
+	%>
+			<%= i %>
+		
+		
+		<% } %>
+	
+	
+</h1>
+<br>
 <a href='fake-credit-cards'>Generate Fake Credit Cards</a>
 
 

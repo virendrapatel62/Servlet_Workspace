@@ -1,3 +1,4 @@
 #Tomcat publish data
-#Sun Jun 14 20:12:42 IST 2020
+#Sat Jun 20 18:46:14 IST 2020
 org.eclipse.jst.jee.server\:HelloWorld=F\:\\Sofwares\\programming\\java\\apache-tomcat-9.0.35-windows-x64\\apache-tomcat-9.0.35\\wtpwebapps\\HelloWorld
+org.eclipse.jst.jee.server\:servlet-config-context=F\:\\Sofwares\\programming\\java\\apache-tomcat-9.0.35-windows-x64\\apache-tomcat-9.0.35\\wtpwebapps\\servlet-config-context
