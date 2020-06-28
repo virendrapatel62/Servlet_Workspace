@@ -9,7 +9,7 @@
 <body>
 	<h1>Contact Manager</h1>
 	
-	<form action='save-contact' method='post'>
+	<form action='<%= response.encodeUrl("save-contact") %>' method='post'>
 		
 		<input placeholder='enter Name' type='text' name='name' />
 		<br/>
@@ -25,7 +25,7 @@
 		<br/>
 		<br/>
 		
-		<a href='show'>Show Contacts</a>
+		<a href='<%= response.encodeUrl("show") %>'>Show Contacts</a>
 	
 	</form>
 	
